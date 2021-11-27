@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+  
+        .navbar{
+            position: sticky;    
+            top:3px;
+        }
+        .navbar ul{
+            display: flex;
+            font-size:23px;
+            color: white;
+            background-color: black;
+            border-radius: 13px;
+        }
+
+        li{
+            padding: 5px 18px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        a{
+            color: rgb(241, 227, 227);
+        }
+
+        a:hover{
+            color: white;
+        }
+
+        header{
+            text-align: center;
+            
+        }
+
+        header::before{
+            background: url("https://img1.exportersindia.com/product_images/bc-full/dir_41/1215261/imgage-002-215732.jpg") no-repeat center center/cover;
+            content: "";
+            position: absolute;   /* Absolute is compulsory*/
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;            
+            opacity: 0.8;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="main">
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>This is my name</h1>
+            <h3>my self is aniket Chavan from bca Science 3rd pursing by the way...</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem repudiandae, fugiat inventore praesentium obcaecati neque eum velit blanditiis cum voluptas in natus nesciunt, consectetur nostrum delectus quo voluptatum. Ducimus atque ipsam dolores rerum.</p>
+        </header>
+   
+    </div>
+</body>
+</html>

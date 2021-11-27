@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgreen;
+        }
+
+        .box{
+            display: flex;
+            width: 150px;
+            height: 150px;        
+            border: 2px solid red;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            /* transform: rotate(30deg); */
+            transition: all 1s ease-in-out;
+        }
+
+        .box:hover{
+          /* transform:rotate(45deg);  */
+          /* transform:rotate(360deg);  */
+          /* transform: skew(40deg); */
+          /* transform: scale(3); */
+            transform: translate(20px,30px);
+
+        } 
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">I am a box</div>
+    </div>
+</body>
+</html>

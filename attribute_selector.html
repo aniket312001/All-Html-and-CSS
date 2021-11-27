@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input{
+            display: block;
+        }
+
+        .container{
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+/* attribute selector should be written in []  */
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+
+        a[target='_blank']{
+            background-color: pink;
+        }
+
+        a[target='_self']{
+            background-color: rgb(133, 226, 153);
+        }
+
+        li:nth-child(5){
+            background-color: purple;
+        }
+        li:nth-child(odd){
+            color:sandybrown;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_self">Go to Google</a></h1>
+        <h1><a href="http://facebook.com" target="_blank">Go to facebook</a></h1>
+
+        <form action="">
+            <input type="text" name="nm" id="" placeholder="Enter your Name">
+            <input type="password" name="" id="" placeholder="password">
+            <input type="submit" value="Submit">
+        </form>
+        
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+            <li class="item" id="item-9">item9</li>
+        </ul>
+        
+    </div>
+</body>
+</html>

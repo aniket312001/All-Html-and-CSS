@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid red;
+        }
+
+        #box1{
+            background-color: lightblue;
+            
+            position: relative;
+            top: 50px;
+            z-index: 35; /*the greater the z value the heigher the priority of getting up
+                           z-index only work with postion - relative, absolute , fixed, sticky */ 
+        }
+        #box2{
+            background-color: rgb(142, 231, 164);
+            /* visibility:hidden;        will hide the element but will shows the space  */
+            /* display: none;            will hide the element and space              */
+            position: relative;
+            top: 40px;
+            z-index: 31;
+        }
+        #box3{
+            background-color: rgb(230, 173, 197);
+            position: relative;
+            z-index: 80;
+        }
+        #box4{
+            background-color: rgb(247, 170, 170);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>

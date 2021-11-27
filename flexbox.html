@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse ;   it will arraging in reverse order */
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* or  */
+            flex-flow: row wrap;
+            justify-content: center;
+            /* justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+
+
+            align-items: center;
+            /* align-items:flex-start;
+            align-items:flex-end; */
+
+
+           
+        }
+
+        .item{
+            background-color: tomato;
+            border: 2px solid greenyellow;
+            margin: 5px;
+            padding: 5px;
+            width: 80px;
+            height: 40px;
+        }
+
+
+        #item-1{
+            order: 133;  /*it will go at last if order is greater*/
+
+            /* flex-grow: 1; */
+
+            flex-shrink: 2;
+        }
+
+        #item-2{
+            order: 99;
+            /* flex-grow: 3;   it take 3 box space */
+        }
+
+        #item-3{
+            order: 100;
+
+            /* flex-basis: 440px; */
+
+            flex: 2 2 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        
+    </div>
+</body>
+</html>

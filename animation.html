@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: lightpink;
+        }
+
+        .box{
+            width: 250px;
+            height: 250px;
+            border: 2px solid red;
+            background-color: lightgreen;
+            
+            animation-name: moveforward;
+           
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards; /*it will stop at ending*/
+            /* animation-fill-mode:alternate; */
+            animation-timing-function: ease-in;
+            animation-delay: 2s;
+            /* animation-direction: reverse; */
+        }
+
+        @keyframes moveforward {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 800px;
+                
+            }
+        }
+
+
+        .container2{
+            background-color: lightgray;
+        }
+
+        .box2{
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+            background-color: lightgreen;
+            position: relative;
+            animation-name: mover;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+
+            /* shorthand of animation  */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+           
+        }
+
+        @keyframes mover {
+           0%{
+            top: 0px;
+            left: 0px;
+           }
+
+           25%{
+            top: 250px;
+            left: 0px;
+           }
+ 
+           75%{
+            top: 250px;
+            left: 250px
+           }
+
+           100%{
+            top: 0px;
+            left: 250px
+           }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <div class="container2">
+        <div class="box2">
+            
+        </div>
+    </div>
+</body>
+</html>
