@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=2, initial-scale=1.0">
+    <title>spanning</title>
+
+    <style>
+        .grid{
+            display: grid;
+          
+            grid-template-columns: repeat(5,1fr);;/*  part and 4 part column  will divide*/   /*  this will be ignore*/
+
+            grid-template-rows: repeat(4,1fr);
+
+            /* gap between data */
+
+            /* grid-column-gap: 2rem;
+            grid-row-gap: 1rem; */
+            grid-gap: 1rem;
+        }
+
+        .box{
+            border: 2px solid red;
+            background-color: lightblue;
+            padding: 23px;
+        }
+
+        .box:first-child{
+            grid-column-start: 1;  /* it will take column from 1 to 2  or  in other word it start from line 1 to line 3 */
+            grid-column-end: 3;  /* it will not take 3rd column */
+            grid-row-start:1 ;  /* as same as column*/
+            grid-row-end: 3;
+
+            /* or */
+
+            grid-column: 1 / span 2; /*both are same but it will start from 1 and end at 2*/
+            grid-row: 1 / span 2;
+
+        }
+
+        
+        .box:nth-child(3){
+            grid-column: 3 / span 4; /*both are same but it will start from 1 and end at 2*/
+            grid-row: 3 / span 4;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="grid">
+        <div class="box">this is box-1</div>
+        <div class="box">this is box-2</div>
+        <div class="box">this is box-3</div>
+        <div class="box">this is box-4</div>
+        <div class="box">this is box-5</div>
+        <div class="box">this is box-6</div>
+        <div class="box">this is box-7</div>
+        <div class="box">this is box-8</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-10</div>
+        <div class="box">this is box-11</div>
+        <div class="box">this is box-12</div>
+        <div class="box">this is box-13</div>
+        <div class="box">this is box-14</div>
+        <div class="box">this is box-15</div>
+        <div class="box">this is box-16</div>
+        <div class="box">this is box-17</div>
+        <div class="box">this is box-18</div>
+        <div class="box">this is box-19</div>
+        <div class="box">this is box-20</div>
+        <div class="box">this is box-20</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column grid</title>
+    <style>
+        .container{
+            display: grid;
+
+            grid-template-columns: 200px 100px 100px;
+            grid-template-columns: 200px 100px auto;
+            /* grid-template-columns: 2fr 1fr 3fr;    from total width 2 part for first item  , 1 part for second item , 3 part third item */
+            grid-template-columns: repeat(10,auto);  /* who will write 10 time 1fr or 2fr so use repeat function */
+            grid-gap: 2rem;  /* add a gap */
+            
+        }
+
+        .item{
+            border: 2px solid red;
+            background-color: lightblue;
+            /* margin: 23px; */
+            padding: 13px 5px ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-10</div>
+    </div>
+</body>
+</html>

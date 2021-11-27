@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=2, initial-scale=1.0">
+    <title>spanning</title>
+
+    <style>
+        .grid{
+            display: grid;
+            grid-gap: 1rem;
+          
+            /* grid-template-columns: 112px 112px 112px; */
+            /* grid-template-columns: 1fr 1fr 1fr;  it is not good for responsive website  */
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          
+            /* justify-content: center; */
+           
+
+ 
+        }
+
+        .box{
+            border: 2px solid red;
+            background-color: lightblue;
+            padding: 23px;
+        }
+
+       
+
+    </style>
+
+</head>
+<body>
+
+    <h1>auto-fit, minmax  for responsive website</h1>
+
+    <div class="grid">
+        <div class="box">this is box-1</div>
+        <div class="box">this is box-2</div>
+        <div class="box">this is box-3</div>
+        <div class="box">this is box-4</div>
+        <div class="box">this is box-5</div>
+        <div class="box">this is box-6</div>
+        <div class="box">this is box-7</div>
+        <div class="box">this is box-8</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-9</div>
+    
+    </div>
+</body>
+</html>
